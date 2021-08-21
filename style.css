@@ -45,6 +45,7 @@ nav ul{
   margin:  auto;
   display: grid;
   grid-template-columns: 1fr 2fr;
+  border-radius: 12px;
 }
 .left{
   background-color:#003147;
@@ -65,6 +66,7 @@ nav ul{
 .container .imageBox{
   position: relative;
   width:200px;
+  height:200px;
   border-radius:5px;
 }
 .profileText img{
@@ -112,12 +114,12 @@ nav ul{
 .skills span div{
   background-color:red;
   height:12px;
-Display:flex;
- Font-size: 12px;
+  display:flex;
   align-items:center;
   color:white;
-  padding-left: 100px;
-    border-radius: 5px;
+  padding-left: 30%;
+  border-radius: 5px;
+  font-size: 11px;
   text-align: center;
 }
 .right .title h3{
@@ -158,4 +160,39 @@ Display:flex;
   .container{
     grid-template-columns: 1fr ;
   }
+}
+@media screen and (min-width: 900px){
+  .right{
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+  }
+  .left{
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+  }
+
+}
+@media screen and (min-width: 600px) {
+  .skills ul li{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  .skills li{
+    display: flex;
+    align-items: center;
+
+  }
+}
+@media screen and (min-width: 600px) {
+
+  .grid{
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+  }
+}
+@media  screen and (min-width:900px) {
+  .skills ul li , .grid{
+    display: block;
+  }
+
 }
