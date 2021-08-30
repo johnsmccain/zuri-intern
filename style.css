@@ -71,7 +71,7 @@ nav ul{
 }
 .profileText img{
   width: 200px;
-  object-fit: cover;
+  object-fit: contain;
   border-radius:5px;
 }
 .left .profileText h2{
